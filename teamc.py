@@ -274,3 +274,94 @@ def drawStarFish():
         c.forward(40)
         c.right(144)
     c.end_fill()
+    
+def drawRainbowStripe(number1, number2):
+    #by Callie
+    c.pendown()
+    c.forward(10)
+    c.setheading(90)
+    for i in range(180):
+        c.forward(1/number1)
+        c.right(1)
+    c.setheading(0)
+    c.forward(10)
+    c.setheading(90)
+    for i in range(183):
+        c.forward(1.17/number2)
+        c.left(1)
+
+def redStripe():
+    #by Callie
+    c.begin_fill()
+    c.fillcolor("red")
+    drawRainbowStripe(1, 1)
+    c.end_fill()
+    c.setheading(0)
+    c.forward(5)
+
+def orangeStripe():
+    #by Callie
+    c.begin_fill()
+    c.fillcolor("orange")
+    drawRainbowStripe(1.11, 1.1)
+    c.end_fill()
+    c.setheading(0)
+    c.forward(5)
+
+def yellowStripe():
+    #by Callie
+    c.begin_fill()
+    c.fillcolor("yellow")
+    drawRainbowStripe(1.25, 1.2)
+    c.end_fill()
+    c.setheading(0)
+    c.forward(5)
+
+def greenStripe():
+    #by Callie
+    c.begin_fill()
+    c.fillcolor("green")
+    drawRainbowStripe(1.5, 1.4)
+    c.end_fill()
+    c.setheading(0)
+    c.forward(5)
+
+def blueStripe():
+    #by Callie
+    c.begin_fill()
+    c.fillcolor("blue")
+    drawRainbowStripe(1.7, 1.55)
+    c.end_fill()
+    c.setheading(0)
+    c.forward(5)
+
+def purpleStripe():
+    #by Callie
+    c.begin_fill()
+    c.fillcolor("purple")
+    drawRainbowStripe(2, 1.8)
+    c.end_fill()
+
+def drawRainbow():
+    #by Callie
+    redStripe()
+    orangeStripe()
+    yellowStripe()
+    greenStripe()
+    blueStripe()
+    purpleStripe()
+
+def drawRect(topLeftX, topLeftY, width, height, color):
+  #by Callie
+    c.penup()
+    c.goto(topLeftX, topLeftY)
+    c.setheading(0)
+    c.fillcolor(color)
+    c.begin_fill()
+    c.pendown()
+    for i in range(2):
+        c.forward(width)
+        c.right(90)
+        c.forward(height)
+        c.right(90)
+    c.end_fill()
