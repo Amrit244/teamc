@@ -1,4 +1,6 @@
 from turtle import *
+from random import *
+tracer(0)
 c = Turtle()
 colormode(255)
 
@@ -366,3 +368,5 @@ def drawRect(topLeftX, topLeftY, width, height, color):
         c.forward(height)
         c.right(90)
     c.end_fill()
+    
+update()
