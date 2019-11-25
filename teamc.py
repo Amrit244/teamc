@@ -12,10 +12,10 @@ def reminder():
   
 def cloud():
     #by Dalton
-    tracer(0)
     c.fillcolor("light grey")
     c.begin_fill()
     c.pencolor("grey")
+    size = random()/10 + .1
     for i in range(90):
         c.forward(1*size)
         c.right(1)
@@ -128,7 +128,6 @@ def cloud():
         c.forward(1*size)
         c.right(1)
     c.end_fill()
-    update()
 
 def tree():
     #by Dalton
