@@ -406,8 +406,7 @@ def drawFence():
         c.left(90)
         c.forward(10)    
         
-def drawSandcastle():
-    #by jon
+def drawSandcastle2():
     c.fillcolor(181,101,29)
     c.begin_fill()
     c.forward(70)
@@ -428,7 +427,10 @@ def drawSandcastle():
     c.left(90)
     c.forward(50)
     c.penup()
-    c.goto(60,40)
+    c.setheading(0)
+    c.forward(60)
+    c.left(90)
+    c.forward(40)
     c.pendown()
     c.setheading(90)
     c.forward(20)
@@ -447,7 +449,10 @@ def drawSandcastle():
     c.left(90)
     c.forward(30)
     c.penup()
-    c.goto(50,60)
+    c.left(90)
+    c.forward(40)
+    c.left(90)
+    c.forward(20)
     c.setheading(90)
     c.pendown()
     c.forward(20)
@@ -467,12 +472,10 @@ def drawSandcastle():
     c.forward(20)
     c.end_fill()
     c.penup()
-    c.goto(18.5,0)
-    c.setheading(90)
-    c.pendown()
-    for i in range(180):
-        c.forward(.3)
-        c.right(1)
+    c.left(180)
+    c.forward(10)
+    c.right(90)
+    c.forward(13)
     #flag start
     c.penup()
     c.goto(33,80)
@@ -500,6 +503,16 @@ def drawSandcastle():
     c.right(90)
     c.forward(20)
     c.end_fill()
+    c.penup()
+    c.setheading(270)
+    c.forward(91.71572875253811)
+    c.right(90)
+    c.forward(19.5)
+    c.setheading(90)
+    c.pendown()
+    for i in range(180):
+        c.forward(.3)
+        c.right(1)
    
 def kite():
     #by jon
