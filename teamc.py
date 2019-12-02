@@ -283,7 +283,7 @@ def getRandomColor():
 tracer(0)
 c = Turtle()
 def ballon():
- #Amrit
+ #ByAmrit
  randomColor = getRandomColor()
  c.fillcolor(randomColor)
  c.penup()
