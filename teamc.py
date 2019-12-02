@@ -9,6 +9,44 @@ def reminder():
   # don't forget to put a comment with your name at the top of each function you make
   # this will help to keep track of who created each function
   return True
+
+def deadTree():
+  #by Dalton
+    c.fillcolor("brown")
+    c.begin_fill()
+    c.setheading(0)
+    for i in range(2):
+        c.forward(25)
+        c.left(90)
+        c.forward(150)
+        c.left(90)
+    c.end_fill()
+    c.fillcolor("brown")
+    c.begin_fill()
+    c.left(90)
+    c.forward(50)
+    c.left(45)
+    c.forward(50)
+    c.left(90)
+    c.forward(10)
+    c.left(90)
+    c.forward(60)
+    c.end_fill()
+    c.fillcolor("brown")
+    c.begin_fill()
+    c.left(135)
+    c.forward(115)
+    c.right(90)
+    c.forward(25)
+    c.right(90)
+    c.forward(30)
+    c.left(120)
+    c.forward(40)
+    c.right(90)
+    c.forward(10)
+    c.right(90)
+    c.forward(45)
+    c.end_fill()
   
 def cloud():
     #by Dalton
