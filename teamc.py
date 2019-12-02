@@ -274,3 +274,40 @@ def drawStarFish():
         c.forward(40)
         c.right(144)
     c.end_fill()
+
+    
+randomColor = (randint(0,255), randint(0,255), randint(0,255)) 
+def getRandomColor():
+   return  (randint(0,255), randint(0,255), randint(0,255))
+
+tracer(0)
+c = Turtle()
+def ballon():
+ #Amrit
+ randomColor = getRandomColor()
+ c.fillcolor(randomColor)
+ c.penup()
+ c.goto(0,0)
+ c.begin_fill()
+ c.pendown()
+for i in range(360):
+  c.forward(1)
+  c.right(1)
+c.penup()
+c.goto(0,-110)
+c.setheading(270)
+c.pendown()
+c.forward(200)
+
+ballon()
+ 
+
+def drawTriangle():
+  for i in range(3):
+    c.forward(45)
+    c.right(120)
+c.penup()
+c.goto(0,-117)
+drawTriangle()
+
+update()
